@@ -1,0 +1,53 @@
+{
+  "greeting": [
+    "Hi! I'm the DiaSense Assistant. I can help with diabetes info, prediction guidance, doctor booking, and appointments. What do you need?"
+  ],
+  "bot_identity": [
+    "I'm DiaSense Assistant, a chatbot trained using our project dataset to help users with diabetes-related guidance and app support."
+  ],
+  "thanks": [
+    "You're welcome! If you have another question, ask anytime."
+  ],
+  "goodbye": [
+    "Goodbye! Take care and stay healthy."
+  ],
+  "fallback": [
+    "Sorry, I didn't understand. Please ask about diabetes, symptoms, prevention, diet, exercise, prediction, login, doctors, or appointments."
+  ],
+
+  "diabetes_definition": [
+    "Diabetes is a condition where blood sugar stays too high because the body cannot produce enough insulin or cannot use insulin effectively."
+  ],
+  "diabetes_symptoms": [
+    "Common symptoms include increased thirst, frequent urination, fatigue, blurred vision, slow-healing wounds, and unexplained weight changes. If symptoms are serious, consult a doctor."
+  ],
+  "diabetes_prevention": [
+    "Prevention steps include maintaining a healthy weight, regular physical activity, balanced diet, limiting sugary foods/drinks, and regular health checkups."
+  ],
+  "diet_diabetes_general": [
+    "A diabetes-friendly diet focuses on vegetables, whole grains, lean protein, healthy fats, and controlled portions of carbohydrates. Limit sugary drinks and highly processed foods."
+  ],
+  "exercise_advice": [
+    "Regular activity like brisk walking, cycling, or home workouts can help control blood sugar. Aim for consistent exercise and start slowly if you are new."
+  ],
+  "blood_pressure_info": [
+    "Blood pressure is the force of blood against artery walls. Managing it with healthy diet, low salt, exercise, stress control, and doctor advice is important—especially for diabetes risk."
+  ],
+  "cholesterol_info": [
+    "Cholesterol is a type of fat in blood. High LDL can increase heart risk. Healthy diet, exercise, and medical guidance help manage cholesterol."
+  ],
+
+  "prediction_help": [
+    "To use diabetes prediction, enter your values (like glucose, BMI, age, blood pressure, insulin, etc.) and click Predict. The system will show risk level and probability."
+  ],
+  "login_help": [
+    "If you can't login, check your email/password, ensure you registered first, and try again. If the problem continues, log out and login again or reset your details."
+  ],
+
+  "book_doctor": [
+    "To book a doctor, open Doctors, select a doctor, choose a date and time slot, add a reason, and confirm the appointment."
+  ],
+  "cancel_appointment": [
+    "To cancel an appointment, open My Appointments and choose Cancel for the appointment you want to remove."
+  ]
+}

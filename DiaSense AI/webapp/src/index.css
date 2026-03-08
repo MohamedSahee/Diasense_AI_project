@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Medical Blue Theme */
+    --background: 210 40% 98%;
+    --foreground: 215 35% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 35% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 35% 15%;
+
+    /* Primary - Deep Medical Blue */
+    --primary: 215 90% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Healing Teal */
+    --secondary: 175 60% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 30% 95%;
+    --muted-foreground: 215 20% 45%;
+
+    /* Accent - Health Green */
+    --accent: 155 70% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 25% 88%;
+    --input: 210 25% 88%;
+    --ring: 215 90% 45%;
+
+    --radius: 0.75rem;
+
+    /* Custom Colors */
+    --success: 155 70% 40%;
+    --warning: 40 95% 55%;
+    --info: 200 85% 50%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 90% 45%) 0%, hsl(195 85% 45%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(215 90% 45%) 0%, hsl(175 60% 45%) 50%, hsl(155 70% 45%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(0, 0%, 100%, 0.9) 0%, hsla(210, 40%, 98%, 0.8) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsla(215, 35%, 15%, 0.1);
+    --shadow-medium: 0 8px 30px -8px hsla(215, 35%, 15%, 0.15);
+    --shadow-strong: 0 20px 50px -15px hsla(215, 35%, 15%, 0.2);
+    --shadow-glow: 0 0 40px hsla(215, 90%, 45%, 0.2);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 35% 8%;
+    --foreground: 210 40% 96%;
+
+    --card: 215 35% 12%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 215 35% 12%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 200 85% 55%;
+    --primary-foreground: 215 35% 8%;
+
+    --secondary: 175 60% 50%;
+    --secondary-foreground: 215 35% 8%;
+
+    --muted: 215 30% 18%;
+    --muted-foreground: 210 20% 60%;
+
+    --accent: 155 70% 50%;
+    --accent-foreground: 215 35% 8%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 30% 20%;
+    --input: 215 30% 20%;
+    --ring: 200 85% 55%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(200 85% 55%) 0%, hsl(175 60% 50%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(215 35% 12%) 0%, hsl(215 40% 18%) 100%);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .bg-gradient-primary {
+    background-image: var(--gradient-primary);
+  }
+
+  .bg-gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+
+  .bg-gradient-card {
+    background-image: var(--gradient-card);
+  }
+
+  .bg-glass {
+    background-image: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes toast-progress {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-report {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: #ffffff !important;
+    overflow: visible !important;
+  }
+
+  .report-section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 14px !important;
+  }
+
+  .break-inside-avoid {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  nav,
+  footer,
+  aside,
+  button {
+    display: none !important;
+  }
+
+  .grid {
+    gap: 12px !important;
+  }
+
+  .shadow-soft,
+  .shadow-medium,
+  .shadow-strong,
+  .shadow-glow {
+    box-shadow: none !important;
+  }
+
+  .bg-gradient-primary,
+  .bg-gradient-hero,
+  .bg-gradient-card,
+  .bg-glass,
+  .text-gradient {
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    color: inherit !important;
+  }
+
+  .rounded-3xl,
+  .rounded-2xl,
+  .rounded-xl,
+  .rounded-lg,
+  .rounded-md {
+    border-radius: 12px !important;
+  }
+
+  p,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  table,
+  ul,
+  ol,
+  .card,
+  .section,
+  .report-card {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}

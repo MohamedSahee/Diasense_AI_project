@@ -1,0 +1,319 @@
+/* diasense-ai-dashboard/src/index.css */
+
+/* ✅ If you are NOT using Tailwind build properly, these lines cause "Unknown at rule @tailwind".
+   You can safely REMOVE them.
+   If you ARE using Tailwind, keep them and make sure postcss.config.js + tailwind.config.js are correct.
+*/
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --primary: #2563eb;
+  --primary2: #1d4ed8;
+  --shadow: 0 10px 25px rgba(2, 6, 23, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* =========================================
+   Layout
+========================================= */
+
+.adm-wrap {
+  min-height: 100vh;
+}
+
+.adm-topbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.adm-brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.adm-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--primary), #22c55e);
+  color: #fff;
+  font-weight: 900;
+}
+
+.adm-title {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.adm-sub {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.adm-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 20px 40px;
+}
+
+.adm-hero {
+  background: linear-gradient(135deg, #e0f2fe, #ecfdf5);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.adm-hero h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+.adm-hero p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* =========================================
+   Cards
+========================================= */
+
+.adm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+@media (max-width: 900px) {
+  .adm-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.adm-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.adm-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(37, 99, 235, 0.35);
+  box-shadow: 0 14px 30px rgba(2, 6, 23, 0.12);
+}
+
+.adm-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: rgba(37, 99, 235, 0.12);
+  font-size: 22px;
+}
+
+.adm-card-body h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.adm-card-body p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.adm-card-arrow {
+  margin-left: auto;
+  font-size: 18px;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+/* =========================================
+   Footer / Boxes
+========================================= */
+
+.adm-footerbar {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .adm-footerbar {
+    grid-template-columns: 1fr;
+  }
+}
+
+.adm-footerbox {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.adm-footerbox h4 {
+  margin: 0 0 10px;
+}
+
+.adm-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.adm-muted {
+  color: var(--muted);
+  margin: 0;
+}
+
+/* =========================================
+   Buttons
+========================================= */
+
+.adm-btn {
+  border: 0;
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 800;
+  transition: transform 0.12s ease, background 0.12s ease, box-shadow 0.12s ease;
+}
+
+.adm-btn:hover {
+  background: var(--primary2);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.18);
+}
+
+.adm-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.adm-btn-outline {
+  background: transparent;
+  border: 1px solid rgba(37, 99, 235, 0.35);
+  color: var(--primary);
+}
+
+.adm-btn-outline:hover {
+  background: rgba(37, 99, 235, 0.06);
+  box-shadow: none;
+}
+
+/* =========================================
+   ✅ NEW: Inputs + Tables (for Doctors page UI)
+========================================= */
+
+.adm-input {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 12px;
+  outline: none;
+  min-width: 180px;
+  background: #fff;
+  color: var(--text);
+  transition: border-color 0.12s ease, box-shadow 0.12s ease;
+}
+
+.adm-input::placeholder {
+  color: rgba(100, 116, 139, 0.8);
+}
+
+.adm-input:focus {
+  border-color: rgba(37, 99, 235, 0.45);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+}
+
+.adm-table-wrap {
+  width: 100%;
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.adm-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.adm-table th,
+.adm-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.adm-table th {
+  font-size: 13px;
+  color: var(--muted);
+  background: rgba(2, 6, 23, 0.02);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.adm-table tr:hover td {
+  background: rgba(37, 99, 235, 0.03);
+}
+
+/* ✅ Small admin button */
+.adm-btn-sm {
+  padding: 6px 10px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+  line-height: 1.1 !important;
+  height: 40px;
+}

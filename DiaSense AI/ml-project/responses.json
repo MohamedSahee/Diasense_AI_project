@@ -1,0 +1,97 @@
+{
+  "greeting": [
+    "Hello! I'm your DiaSense Assistant. How can I help you today?",
+    "Hi! I can help with diabetes information, healthy lifestyle tips, prediction guidance, doctor booking, and account support.",
+    "Hey there! Ask me about diabetes, blood sugar, diet, exercise, appointments, or prediction."
+  ],
+
+  "bot_identity": [
+    "I'm DiaSense Assistant, a chatbot created to provide diabetes education and help you use the DiaSense system.",
+    "I'm your DiaSense Assistant. I answer common diabetes questions and help you use features like prediction, appointments, and login.",
+    "I am a virtual assistant for the DiaSense project. I provide general diabetes information and app guidance."
+  ],
+
+  "thanks": [
+    "You're welcome!",
+    "Glad I could help.",
+    "Happy to help! Let me know if you have another question."
+  ],
+
+  "goodbye": [
+    "Goodbye! Take care and stay healthy.",
+    "Bye! Feel free to come back anytime.",
+    "See you later. Wishing you good health."
+  ],
+
+  "fallback": [
+    "Sorry, I didn't understand that. You can ask me about diabetes symptoms, blood sugar, diet, exercise, prediction, appointments, or login help.",
+    "I'm not sure what you mean. Try asking about diabetes, healthy lifestyle tips, blood sugar, doctor booking, or prediction guidance.",
+    "I couldn't understand that clearly. Ask me about diabetes information, lifestyle guidance, prediction help, or system support."
+  ],
+
+  "diabetes_definition": [
+    "Diabetes is a condition where blood sugar levels stay too high because the body cannot produce enough insulin or cannot use insulin effectively.",
+    "Diabetes is a metabolic condition that affects how the body regulates blood glucose.",
+    "Diabetes occurs when insulin production or insulin function is not enough to control blood sugar properly."
+  ],
+
+  "diabetes_symptoms": [
+    "Common symptoms include increased thirst, frequent urination, fatigue, blurred vision, slow healing wounds, and unexplained weight changes.",
+    "Diabetes symptoms may include thirst, fatigue, frequent urination, blurry vision, and slow healing cuts.",
+    "Signs of diabetes can include excessive thirst, hunger, tiredness, and frequent urination."
+  ],
+
+  "diabetes_prevention": [
+    "Diabetes prevention includes healthy eating, regular exercise, maintaining a healthy weight, reducing sugary foods, and regular health checkups.",
+    "Healthy lifestyle habits such as balanced diet, physical activity, and weight management can reduce diabetes risk.",
+    "Preventing diabetes often focuses on good nutrition, regular exercise, and maintaining a healthy weight."
+  ],
+
+  "diet_guidance": [
+    "A diabetes-friendly diet includes vegetables, whole grains, lean proteins, healthy fats, and controlled carbohydrate portions.",
+    "Healthy eating for diabetes focuses on balanced meals, fiber-rich foods, and limiting sugary drinks and processed foods.",
+    "Choose vegetables, whole foods, lean protein, and healthy fats while limiting high sugar foods."
+  ],
+
+  "exercise_guidance": [
+    "Regular exercise such as walking, cycling, or light workouts can help control blood sugar and improve overall health.",
+    "Physical activity supports healthy blood sugar levels and helps with weight management.",
+    "Exercise like walking or stretching can help reduce diabetes risk and improve energy levels."
+  ],
+
+  "blood_sugar_info": [
+    "Blood sugar refers to the level of glucose in your blood. Monitoring it helps manage diabetes risk.",
+    "The A1C test shows your average blood sugar level over the past 2 to 3 months.",
+    "Blood sugar testing helps track glucose levels and manage diabetes more effectively."
+  ],
+
+  "complications_info": [
+    "Diabetes can lead to complications if not managed properly, including eye problems, kidney disease, nerve damage, and heart disease.",
+    "Long-term uncontrolled diabetes may affect the eyes, kidneys, nerves, heart, and feet.",
+    "Proper diabetes management can reduce the risk of serious complications."
+  ],
+
+  "prediction_help": [
+    "To use diabetes prediction, enter your health values such as glucose, BMI, age, and blood pressure, then click Predict.",
+    "The prediction tool estimates diabetes risk based on the health values you provide.",
+    "Fill in the required health fields correctly and submit to get your diabetes risk prediction."
+  ],
+
+  "doctor_booking": [
+    "To book a doctor, open the Doctors page, select a doctor, choose a date and time slot, and confirm the appointment.",
+    "You can book a doctor by selecting an available doctor and choosing a suitable appointment time.",
+    "Doctor booking usually requires choosing a doctor, selecting a date, and confirming the appointment."
+  ],
+
+  "appointment_help": [
+    "You can manage appointments from the appointments page where you can view, update, or cancel bookings.",
+    "Appointment help includes checking appointment details, booking new visits, or cancelling existing appointments.",
+    "To manage appointments, open your appointments section and choose the action you need."
+  ],
+
+  "login_help": [
+    "If you cannot login, check your email and password carefully and make sure your account is registered.",
+    "Login issues may happen due to incorrect credentials or typing mistakes.",
+    "If login fails, verify your email, password, and internet connection, then try again."
+  ]
+}
