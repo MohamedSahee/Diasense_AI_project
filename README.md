@@ -99,6 +99,25 @@ DiaSense-AI
 │
 └── README.md
 
+##Installation
+1. Clone the repository
+git clone https://github.com/your-username/diasense-ai.git
+cd diasense-ai
+
+2. Install frontend
+cd frontend
+npm install
+npm run dev
+
+3. Install backend
+cd backend
+npm install
+npm run dev
+
+4. Install ML service
+cd ml-service
+pip install -r requirements.txt
+uvicorn main:app --reload
 
 ##Contributing
 This project was developed as a final year software engineering project. Contributions and suggestions for improvement are welcome.
