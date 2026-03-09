@@ -71,3 +71,30 @@ Backend API (Node.js / Express)
   │
   ▼
 ML Service (Python FastAPI)
+
+## Project Stucure 
+DiaSense-AI
+│
+├── frontend
+│   ├── src
+│   ├── components
+│   ├── pages
+│   └── lib
+│
+├── backend
+│   ├── routes
+│   ├── models
+│   ├── controllers
+│   └── middleware
+│
+├── ml-service
+│   ├── models
+│   ├── artifacts
+│   ├── main.py
+│   └── requirements.txt
+│
+├── admin-dashboard
+│   ├── src
+│   └── components
+│
+└── README.md
