@@ -2,6 +2,8 @@
 
 DiaSense AI is an **AI-powered healthcare web application** that predicts diabetes risk using machine learning models. The system analyzes patient health data and provides risk predictions, health recommendations, chatbot assistance, and doctor consultation features to support early diabetes detection and health management.
 
+"This Repository is Part Of My Individual CourseWork. Unauthorized Copying or Reuse Is Strictly Prohibited." This Code Is Original Work By " Mohamed Shaki " for Academic Purpose.
+
 ---
 
 ## Table of Contents
